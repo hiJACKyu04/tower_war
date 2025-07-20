@@ -1,15 +1,10 @@
 import { ShotTexture } from '../../types';
 import { ShotBallAudio } from '../types';
 
-import audioFire from './audio/fire.mp3';
-import audioFrozen from './audio/frozen.mp3';
-import audioSimple from './audio/simple.mp3';
-import textureBall from './textures/ball.png';
-
 import { Assets } from '~core/assets';
 
-Assets.AddAudio(ShotBallAudio.FIRE, audioFire);
-Assets.AddAudio(ShotBallAudio.SIMPLE, audioSimple);
-Assets.AddAudio(ShotBallAudio.FROZEN, audioFrozen);
+Assets.AddAudio(ShotBallAudio.FIRE, 'assets/fire.mp3');
+Assets.AddAudio(ShotBallAudio.SIMPLE, 'assets/simple.mp3');
+Assets.AddAudio(ShotBallAudio.FROZEN, 'assets/frozen.mp3');
 
-Assets.AddImage(ShotTexture.BALL, textureBall);
+Assets.AddImage(ShotTexture.BALL, 'assets/resources/textures/ball.png');
