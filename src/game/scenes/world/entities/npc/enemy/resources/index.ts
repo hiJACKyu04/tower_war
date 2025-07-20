@@ -3,7 +3,7 @@ import { EnemyAudio, EnemyTexture } from '../types';
 
 import { Assets } from '~core/assets';
 
-Assets.AddAudio(EnemyAudio.ROAR, 'assets/roar.mp3');
+Assets.AddAudio(EnemyAudio.ROAR, 'assets/resources/audio/roar.mp3');
 
 addSprite(EnemyTexture.ADHERENT, 'assets/resources/textures/adherent.png');
 addSprite(EnemyTexture.DEMON, 'assets/resources/textures/demon.png');

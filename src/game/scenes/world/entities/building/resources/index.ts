@@ -3,17 +3,17 @@ import { BuildingAudio, BuildingIcon, BuildingTexture } from '../types';
 
 import { Assets } from '~core/assets';
 
-Assets.AddAudio(BuildingAudio.BUILD, 'assets/build.mp3');
-Assets.AddAudio(BuildingAudio.DAMAGE_1, 'assets/damage_1.mp3');
-Assets.AddAudio(BuildingAudio.DAMAGE_2, 'assets/damage_2.mp3');
-Assets.AddAudio(BuildingAudio.DEAD, 'assets/dead.mp3');
-Assets.AddAudio(BuildingAudio.ELECTRO, 'assets/electro.mp3');
-Assets.AddAudio(BuildingAudio.OVER, 'assets/over.mp3');
-Assets.AddAudio(BuildingAudio.RELOAD, 'assets/reload.mp3');
-Assets.AddAudio(BuildingAudio.REPAIR, 'assets/repair.mp3');
-Assets.AddAudio(BuildingAudio.SELECT, 'assets/select.mp3');
-Assets.AddAudio(BuildingAudio.UNSELECT, 'assets/unselect.mp3');
-Assets.AddAudio(BuildingAudio.UPGRADE, 'assets/upgrade.mp3');
+Assets.AddAudio(BuildingAudio.BUILD, 'assets/resources/audio/build.mp3');
+Assets.AddAudio(BuildingAudio.DAMAGE_1, 'assets/resources/audio/damage_1.mp3');
+Assets.AddAudio(BuildingAudio.DAMAGE_2, 'assets/resources/audio/damage_2.mp3');
+Assets.AddAudio(BuildingAudio.DEAD, 'assets/resources/audio/dead.mp3');
+Assets.AddAudio(BuildingAudio.ELECTRO, 'assets/resources/audio/electro.mp3');
+Assets.AddAudio(BuildingAudio.OVER, 'assets/resources/audio/over.mp3');
+Assets.AddAudio(BuildingAudio.RELOAD, 'assets/resources/audio/reload.mp3');
+Assets.AddAudio(BuildingAudio.REPAIR, 'assets/resources/audio/repair.mp3');
+Assets.AddAudio(BuildingAudio.SELECT, 'assets/resources/audio/select.mp3');
+Assets.AddAudio(BuildingAudio.UNSELECT, 'assets/resources/audio/unselect.mp3');
+Assets.AddAudio(BuildingAudio.UPGRADE, 'assets/resources/audio/upgrade.mp3');
 
 Assets.AddImage(BuildingIcon.ALERT, 'assets/resources/icons/alert.png');
 Assets.AddImage(BuildingIcon.CONFIRM, 'assets/resources/icons/confirm.png');

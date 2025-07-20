@@ -3,13 +3,13 @@ import { PlayerAudio, PlayerSkillIcon, PlayerSuperskillIcon, PlayerTexture } fro
 
 import { Assets } from '~core/assets';
 
-Assets.AddAudio(PlayerAudio.DAMAGE_1, 'assets/damage_1.mp3');
-Assets.AddAudio(PlayerAudio.DAMAGE_2, 'assets/damage_2.mp3');
-Assets.AddAudio(PlayerAudio.DAMAGE_3, 'assets/damage_3.mp3');
-Assets.AddAudio(PlayerAudio.DEAD, 'assets/dead.mp3');
-Assets.AddAudio(PlayerAudio.SUPERSKILL, 'assets/superskill.mp3');
-Assets.AddAudio(PlayerAudio.UPGRADE, 'assets/upgrade.mp3');
-Assets.AddAudio(PlayerAudio.WALK, 'assets/walk.mp3');
+Assets.AddAudio(PlayerAudio.DAMAGE_1, 'assets/resources/audio/damage_1.mp3');
+Assets.AddAudio(PlayerAudio.DAMAGE_2, 'assets/resources/audio/damage_2.mp3');
+Assets.AddAudio(PlayerAudio.DAMAGE_3, 'assets/resources/audio/damage_3.mp3');
+Assets.AddAudio(PlayerAudio.DEAD, 'assets/resources/audio/dead.mp3');
+Assets.AddAudio(PlayerAudio.SUPERSKILL, 'assets/resources/audio/superskill.mp3');
+Assets.AddAudio(PlayerAudio.UPGRADE, 'assets/resources/audio/upgrade.mp3');
+Assets.AddAudio(PlayerAudio.WALK, 'assets/resources/audio/walk.mp3');
 
 Assets.AddImage(PlayerTexture.SUPERSKILL, 'assets/resources/textures/superskill.png');
 Assets.AddImage(PlayerSkillIcon.ATTACK_DAMAGE, 'assets/resources/icons/skills/attack_damage.png');
