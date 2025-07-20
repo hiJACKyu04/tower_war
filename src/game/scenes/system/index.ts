@@ -12,8 +12,21 @@ export class SystemScene extends Scene {
   }
 
   public async preload() {
+    console.log('Starting preload...');
+    console.log('Assets.Files count:', Assets.Files.length);
+    
     this.load.on('progress', (value: number) => {
-      SystemScene.SetLoadingStatus(`LOADING\n${Math.round(value * 100)}%`);
+      const percentage = Math.round(value * 100);
+      console.log(`Loading progress: ${percentage}%`);
+      SystemScene.SetLoadingStatus(`LOADING\n${percentage}%`);
+    });
+
+    this.load.on('complete', () => {
+      console.log('All assets loaded successfully');
+    });
+
+    this.load.on('loaderror', (file: any) => {
+      console.error('Asset load error:', file.key, file.url);
     });
 
     this.load.addPack([{
@@ -22,10 +35,16 @@ export class SystemScene extends Scene {
 
     Assets.Clear();
 
-    await Promise.all([
-      Assets.ImportFontFace('PixelLabel', 'pixel_label.ttf'),
-      Assets.ImportFontFace('PixelText', 'pixel_text.ttf'),
-    ]);
+    console.log('Starting font loading...');
+    try {
+      await Promise.all([
+        Assets.ImportFontFace('PixelLabel', 'pixel_label.ttf'),
+        Assets.ImportFontFace('PixelText', 'pixel_text.ttf'),
+      ]);
+      console.log('Fonts loaded successfully');
+    } catch (error) {
+      console.error('Font loading error:', error);
+    }
   }
 
   public async create() {
