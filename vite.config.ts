@@ -20,12 +20,25 @@ export default defineConfig({
     }),
   ],
   root: './src',
-  base: '',
+  base: '/tower_war/',
   build: {
     target: 'esnext',
     outDir: '../dist',
     emptyOutDir: true,
     assetsDir: '',
+    rollupOptions: {
+      output: {
+        assetFileNames: (assetInfo) => {
+          if (!assetInfo.name) return 'assets/[name]-[hash].[ext]';
+          const info = assetInfo.name.split('.');
+          const ext = info[info.length - 1];
+          if (/png|jpe?g|svg|gif|tiff|bmp|ico/i.test(ext)) {
+            return `assets/[name].[ext]`;
+          }
+          return `assets/[name]-[hash].[ext]`;
+        },
+      },
+    },
   },
   server: {
     port: 9999,
