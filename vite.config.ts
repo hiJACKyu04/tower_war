@@ -13,10 +13,56 @@ export default defineConfig({
       typescript: true,
     }),
     viteStaticCopy({
-      targets: [{
-        src: 'assets',
-        dest: '',
-      }],
+      targets: [
+        {
+          src: 'assets',
+          dest: '',
+        },
+        {
+          src: 'game/scenes/world/entities/building/resources',
+          dest: 'assets',
+        },
+        {
+          src: 'game/scenes/world/entities/player/resources',
+          dest: 'assets',
+        },
+        {
+          src: 'game/scenes/world/entities/crystal/resources',
+          dest: 'assets',
+        },
+        {
+          src: 'game/scenes/world/entities/shot/ball/resources',
+          dest: 'assets',
+        },
+        {
+          src: 'game/scenes/world/entities/npc/enemy/resources',
+          dest: 'assets',
+        },
+        {
+          src: 'game/scenes/world/entities/npc/assistant/resources',
+          dest: 'assets',
+        },
+        {
+          src: 'game/scenes/world/level/resources',
+          dest: 'assets',
+        },
+        {
+          src: 'game/scenes/world/fx-manager/effect/resources',
+          dest: 'assets',
+        },
+        {
+          src: 'game/scenes/world/fx-manager/particles/resources',
+          dest: 'assets',
+        },
+        {
+          src: 'game/scenes/world/wave/resources',
+          dest: 'assets',
+        },
+        {
+          src: 'game/scenes/screen/resources',
+          dest: 'assets',
+        },
+      ],
     }),
   ],
   root: './src',
@@ -41,6 +87,9 @@ export default defineConfig({
     },
   },
   assetsInclude: ['**/*.png', '**/*.jpg', '**/*.jpeg', '**/*.gif', '**/*.svg', '**/*.mp3', '**/*.wav', '**/*.ogg'],
+  define: {
+    __VITE_ASSET_URL__: JSON.stringify('/tower_war/assets/'),
+  },
   server: {
     port: 9999,
   },
