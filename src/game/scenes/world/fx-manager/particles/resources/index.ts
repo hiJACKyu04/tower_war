@@ -1,13 +1,8 @@
 import { ParticlesTexture } from '../types';
 
-import textureBit from './textures/bit.png';
-import textureBitSoft from './textures/bit_soft.png';
-import textureGlow from './textures/glow.png';
-import texturePlus from './textures/plus.png';
-
 import { Assets } from '~core/assets';
 
-Assets.AddImage(ParticlesTexture.BIT, textureBit);
-Assets.AddImage(ParticlesTexture.BIT_SOFT, textureBitSoft);
-Assets.AddImage(ParticlesTexture.GLOW, textureGlow);
-Assets.AddImage(ParticlesTexture.PLUS, texturePlus);
+Assets.AddImage(ParticlesTexture.BIT, 'assets/resources/textures/bit.png');
+Assets.AddImage(ParticlesTexture.BIT_SOFT, 'assets/resources/textures/bit_soft.png');
+Assets.AddImage(ParticlesTexture.GLOW, 'assets/resources/textures/glow.png');
+Assets.AddImage(ParticlesTexture.PLUS, 'assets/resources/textures/plus.png');

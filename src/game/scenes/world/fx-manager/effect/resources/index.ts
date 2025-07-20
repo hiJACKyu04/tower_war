@@ -1,17 +1,11 @@
 import { EFFECT_SIZE } from '../const';
 import { EffectAudio, EffectTexture } from '../types';
 
-import audioExplosion from './audio/explosion.mp3';
-import textureBlood from './textures/blood.png';
-import textureDamage from './textures/damage.png';
-import textureExplosion from './textures/explosion.png';
-import textureSmoke from './textures/smoke.png';
-
 import { Assets } from '~core/assets';
 
-Assets.AddAudio(EffectAudio.EXPLOSION, audioExplosion);
+Assets.AddAudio(EffectAudio.EXPLOSION, 'assets/resources/audio/explosion.mp3');
 
-Assets.AddSprite(EffectTexture.EXPLOSION, textureExplosion, EFFECT_SIZE);
-Assets.AddSprite(EffectTexture.DAMAGE, textureDamage, EFFECT_SIZE);
-Assets.AddSprite(EffectTexture.SMOKE, textureSmoke, EFFECT_SIZE);
-Assets.AddSprite(EffectTexture.BLOOD, textureBlood, EFFECT_SIZE);
+Assets.AddSprite(EffectTexture.EXPLOSION, 'assets/resources/textures/explosion.png', EFFECT_SIZE);
+Assets.AddSprite(EffectTexture.DAMAGE, 'assets/resources/textures/damage.png', EFFECT_SIZE);
+Assets.AddSprite(EffectTexture.SMOKE, 'assets/resources/textures/smoke.png', EFFECT_SIZE);
+Assets.AddSprite(EffectTexture.BLOOD, 'assets/resources/textures/blood.png', EFFECT_SIZE);

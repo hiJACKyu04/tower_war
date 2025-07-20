@@ -1,11 +1,7 @@
 import { WaveAudio } from '../types';
 
-import audioComplete from './audio/complete.mp3';
-import audioStart from './audio/start.mp3';
-import audioTick from './audio/tick.mp3';
-
 import { Assets } from '~core/assets';
 
-Assets.AddAudio(WaveAudio.START, audioStart);
-Assets.AddAudio(WaveAudio.COMPLETE, audioComplete);
-Assets.AddAudio(WaveAudio.TICK, audioTick);
+Assets.AddAudio(WaveAudio.START, 'assets/resources/audio/start.mp3');
+Assets.AddAudio(WaveAudio.COMPLETE, 'assets/resources/audio/complete.mp3');
+Assets.AddAudio(WaveAudio.TICK, 'assets/resources/audio/tick.mp3');
