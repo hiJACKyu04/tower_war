@@ -7,8 +7,7 @@
 Your task is to survive on chosen planet as many waves as possible. With each wave count of enemies and their characteristics will grow. Build walls to defend, towers to attack, ammunitions to reload towers and generators to get more resources.And also upgrade skills of your character and his assistant.
 
 * ### 👾 [Join Discord](https://discord.gg/cnFAdMsRxn)
-* ### 💡 [Wiki](https://github.com/neki-dev/izowave/wiki)
-* ### 🎮 [Play now](https://izowave.neki.guru/)
+* ### 🎮 [Play now](https://hijackyu04.github.io/tower_war/)
 
 .
 
