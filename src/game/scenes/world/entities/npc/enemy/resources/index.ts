@@ -1,38 +1,23 @@
 import { ENEMY_SIZE_PARAMS, ENEMY_TEXTURE_SIZE } from '../const';
 import { EnemyAudio, EnemyTexture } from '../types';
 
-import audioRoar from './audio/roar.mp3';
-import textureAdherent from './textures/adherent.png';
-import textureBerserk from './textures/berserk.png';
-import textureBoss from './textures/boss.png';
-import textureDemon from './textures/demon.png';
-import textureExplosive from './textures/explosive.png';
-import textureGhost from './textures/ghost.png';
-import textureRisper from './textures/risper.png';
-import textureSpike from './textures/spike.png';
-import textureStranger from './textures/stranger.png';
-import textureTank from './textures/tank.png';
-import textureTelepath from './textures/telepath.png';
-import textureTermer from './textures/termer.png';
-import textureUndead from './textures/undead.png';
-
 import { Assets } from '~core/assets';
 
-Assets.AddAudio(EnemyAudio.ROAR, audioRoar);
+Assets.AddAudio(EnemyAudio.ROAR, 'assets/roar.mp3');
 
-addSprite(EnemyTexture.ADHERENT, textureAdherent);
-addSprite(EnemyTexture.DEMON, textureDemon);
-addSprite(EnemyTexture.RISPER, textureRisper);
-addSprite(EnemyTexture.UNDEAD, textureUndead);
-addSprite(EnemyTexture.SPIKE, textureSpike);
-addSprite(EnemyTexture.BERSERK, textureBerserk);
-addSprite(EnemyTexture.EXPLOSIVE, textureExplosive);
-addSprite(EnemyTexture.GHOST, textureGhost);
-addSprite(EnemyTexture.STRANGER, textureStranger);
-addSprite(EnemyTexture.TANK, textureTank);
-addSprite(EnemyTexture.TELEPATH, textureTelepath);
-addSprite(EnemyTexture.TERMER, textureTermer);
-addSprite(EnemyTexture.BOSS, textureBoss);
+addSprite(EnemyTexture.ADHERENT, 'assets/resources/textures/adherent.png');
+addSprite(EnemyTexture.DEMON, 'assets/resources/textures/demon.png');
+addSprite(EnemyTexture.RISPER, 'assets/resources/textures/risper.png');
+addSprite(EnemyTexture.UNDEAD, 'assets/resources/textures/undead.png');
+addSprite(EnemyTexture.SPIKE, 'assets/resources/textures/spike.png');
+addSprite(EnemyTexture.BERSERK, 'assets/resources/textures/berserk.png');
+addSprite(EnemyTexture.EXPLOSIVE, 'assets/resources/textures/explosive.png');
+addSprite(EnemyTexture.GHOST, 'assets/resources/textures/ghost.png');
+addSprite(EnemyTexture.STRANGER, 'assets/resources/textures/stranger.png');
+addSprite(EnemyTexture.TANK, 'assets/resources/textures/tank.png');
+addSprite(EnemyTexture.TELEPATH, 'assets/resources/textures/telepath.png');
+addSprite(EnemyTexture.TERMER, 'assets/resources/textures/termer.png');
+addSprite(EnemyTexture.BOSS, 'assets/resources/textures/boss.png');
 
 function addSprite(texture: EnemyTexture, url: string) {
   Assets.AddSprite(texture, url, ENEMY_SIZE_PARAMS[ENEMY_TEXTURE_SIZE[texture]]);
