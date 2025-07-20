@@ -25,14 +25,14 @@ export default defineConfig({
     target: 'esnext',
     outDir: '../dist',
     emptyOutDir: true,
-    assetsDir: '',
+    assetsDir: 'assets',
     rollupOptions: {
       output: {
         assetFileNames: (assetInfo) => {
           if (!assetInfo.name) return 'assets/[name]-[hash].[ext]';
           const info = assetInfo.name.split('.');
           const ext = info[info.length - 1];
-          if (/png|jpe?g|svg|gif|tiff|bmp|ico/i.test(ext)) {
+          if (/png|jpe?g|svg|gif|tiff|bmp|ico|mp3|wav|ogg/i.test(ext)) {
             return `assets/[name].[ext]`;
           }
           return `assets/[name]-[hash].[ext]`;
@@ -40,6 +40,7 @@ export default defineConfig({
       },
     },
   },
+  assetsInclude: ['**/*.png', '**/*.jpg', '**/*.jpeg', '**/*.gif', '**/*.svg', '**/*.mp3', '**/*.wav', '**/*.ogg'],
   server: {
     port: 9999,
   },
