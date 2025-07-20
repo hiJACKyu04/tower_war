@@ -17,7 +17,7 @@ export const Copyright: React.FC = () => (
       </Author>
       Version {pkg.version}
     </About>
-    <Discord href='https://discord.gg/cnFAdMsRxn' target="_blank">
+    <Discord href='https://discord.gg/aRE4uFeaW8' target="_blank">
       <Icon src={imageDiscord} />
       DISCORD
     </Discord>

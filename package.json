@@ -1,5 +1,5 @@
 {
-  "name": "izowave",
+  "name": "Tower War",
   "description": "Isometric game. Build and defend in open world",
   "version": "1.18.5",
   "keywords": [
@@ -13,9 +13,9 @@
   ],
   "license": "GNU",
   "author": {
-    "name": "Nikita Galadiy",
-    "email": "dev@neki.guru",
-    "url": "https://neki.guru/"
+    "name": "hiJACKyu",
+    "email": "jacktryhard777@gmail.com",
+    "url": "https://github.com/hiJACKyu04"
   },
   "main": "./dist/index.html",
   "scripts": {
@@ -62,6 +62,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/neki-dev/izowave.git"
+    "url": "git+https://github.com/hiJACKyu/tower_defense.git"
   }
 }
