@@ -180,6 +180,7 @@ export const RU = {
   EARTH: 'Земля',
   MOON: 'Луна',
   MARS: 'Марс',
+  VENUS: 'Венера',
 
   /**
    * Difficulties

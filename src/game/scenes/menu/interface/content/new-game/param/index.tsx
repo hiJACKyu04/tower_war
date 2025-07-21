@@ -5,8 +5,8 @@ import { Setting } from '~scene/system/interface/setting';
 
 type Props = {
   label: LangPhrase
-  values: LangPhrase[]
-  defaultValue: LangPhrase
+  values: string[]
+  defaultValue: string
   onChange: (value: any) => void
 };
 
@@ -18,7 +18,7 @@ export const Param: React.FC<Props> = ({
 }) => {
   const [currentValue, setCurrentValue] = useState(defaultValue);
 
-  const handleChange = (value: LangPhrase) => {
+  const handleChange = (value: string) => {
     onChange(value);
     setCurrentValue(value);
   };

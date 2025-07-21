@@ -7,11 +7,11 @@ import { Wrapper, Label, Values, Value } from './styles';
 
 type Props = {
   label: LangPhrase
-  values: (LangPhrase | {
-    value: LangPhrase
+  values: (string | {
+    value: string
     color?: string
   })[]
-  currentValue?: LangPhrase
+  currentValue?: string
   onChange: (value: any) => void
 };
 
@@ -35,7 +35,7 @@ export const Setting: React.FC<Props> = ({
             $active={currentValue === value}
             $color={color}
           >
-            {phrase(value)}
+            {phrase(value as any)}
           </Value>
         );
       })}

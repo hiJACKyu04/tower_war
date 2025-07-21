@@ -43,18 +43,21 @@ export enum LevelPlanet {
   EARTH = 'EARTH',
   MOON = 'MOON',
   MARS = 'MARS',
+  VENUS = 'VENUS', // Venus planet
 }
 
 export enum LevelSceneryTexture {
   EARTH = 'LevelSceneryTexture:EARTH',
   MOON = 'LevelSceneryTexture:MOON',
   MARS = 'LevelSceneryTexture:MARS',
+  VENUS = 'LevelSceneryTexture:VENUS',
 }
 
 export enum LevelTilesetTexture {
   EARTH = 'LevelTilesetTexture:EARTH',
   MOON = 'LevelTilesetTexture:MOON',
   MARS = 'LevelTilesetTexture:MARS',
+  VENUS = 'LevelTilesetTexture:VENUS',
 }
 
 export enum BiomeType {

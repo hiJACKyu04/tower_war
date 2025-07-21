@@ -180,7 +180,7 @@ export const ID = {
   EARTH: 'Bumi',
   MOON: 'Bulan',
   MARS: 'Mars',
-
+  VENUS: 'Venus',
   /**
    * Kesulitan
    */

@@ -110,7 +110,7 @@ export const SaveGame: React.FC = () => {
                 $active={save.name === saveName}
               >
                 <Table.Cell>{save.name}</Table.Cell>
-                <Table.Cell>{phrase(save.payload.level.planet)}</Table.Cell>
+                <Table.Cell>{phrase(save.payload.level.planet as any)}</Table.Cell>
                 <Table.Cell>{phrase(save.payload.game.difficulty)}</Table.Cell>
                 <Table.Cell>{save.payload.wave.number}</Table.Cell>
                 <Table.Cell>{save.payload.player.score}</Table.Cell>

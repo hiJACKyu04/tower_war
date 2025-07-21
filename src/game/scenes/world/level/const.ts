@@ -3,6 +3,7 @@ import type { WorldLayerParams } from 'gen-biome';
 import { LEVEL_BIOMES_EARTH } from './planets/earth';
 import { LEVEL_BIOMES_MARS } from './planets/mars';
 import { LEVEL_BIOMES_MOON } from './planets/moon';
+import { LEVEL_BIOMES_VENUS } from './planets/venus'; // Venus biomes
 import { LevelPlanet } from './types';
 import type { LevelBiomes } from './types';
 
@@ -60,6 +61,12 @@ export const LEVEL_PLANETS: Record<LevelPlanet, {
   },
   [LevelPlanet.MARS]: {
     BIOMES: LEVEL_BIOMES_MARS,
+    SCENERY_DENSITY: 1.5,
+    SCENERY_VARIANTS_COUNT: 8,
+    CRYSTAL_VARIANTS: [0, 2],
+  },
+  [LevelPlanet.VENUS]: {
+    BIOMES: LEVEL_BIOMES_VENUS,
     SCENERY_DENSITY: 1.5,
     SCENERY_VARIANTS_COUNT: 8,
     CRYSTAL_VARIANTS: [0, 2],

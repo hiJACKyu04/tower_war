@@ -62,6 +62,10 @@ export default defineConfig({
           src: 'game/scenes/screen/resources',
           dest: 'assets',
         },
+        {
+          src: 'game/scenes/world/level/resources/textures/venus',
+          dest: 'assets/resources/textures',
+        },
       ],
     }),
   ],
