@@ -1,5 +1,3 @@
- 🟨 _After version 1.18.5, development has been moved to the private repository._
-
 ## ![Tower War](./docs/logotype-large.jpg)
 
 **Live Demo:** [Play the game here](https://hijackyu04.github.io/tower_war/)
